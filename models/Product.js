@@ -8,11 +8,6 @@ class Product extends Model {}
 
 // set up fields and rules for Product model
 
-// product_name: 'Running Sneakers',
-// price: 90.0,
-// stock: 25,
-// category_id: 5,
-
 Product.init(
   {
     id:{
@@ -36,7 +31,7 @@ Product.init(
     category_id:{
       type: DataTypes.INTEGER,
       references:{
-        model: 'catagory',
+        model: 'category',
         key: 'id',
       },
     },
